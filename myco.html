@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="js/myco_style.css" type="text/css" />
+		<script src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var num = 1;
+				$('.h_rigth li').click(function(){
+//					alert(1);
+					$(this).addClass('change').siblings().removeClass();
+				});
+				
+				$('#rigth_bt').click(function(){
+//					alert(num);
+					if(num<5){
+						$('.s_rigth .s_r_body').animate({'left':'-=747px'},400);
+						num++;
+					}
+				});
+				
+				$('#left_bt').click(function(){	
+//					alert(num);
+					if(num>1){
+						$('.s_rigth .s_r_body').animate({'left':'+=747px'},400);
+						num--;
+					}
+					
+				});
+			});
+			
+		</script>
+	</head>
+	<body>
+		<body>
+		<header id="h_mall">
+			<div class="h_body">
+				<div class="h_left"></div>
+				<div class="h_rigth">
+					<ul>
+						<a href="mall.html"><li>兑换特权</li></a>
+						<a href="myco.html"><li class="change">我的积分</li></a>
+						<a href="rule.html"><li>积分规则</li></a>
+					</ul>
+				</div>
+			</div>
+			
+		</header>
+		<section id="s_mall">
+			<div class="s_body">
+				<div class="s_left">
+					<a href="#">登陆签到</a>
+					<p>
+						赚积分换特权<br />
+						连续签到<span style="color: red;">3</span>天还能抽大奖！
+					</p>
+				</div>
+				<div class="s_rigth">
+					<div class="s_r_body">
+						<div class="photo1"></div>
+						<div class="photo2"></div>
+						<div class="photo3"></div>
+						<div class="photo4"></div>
+						<div class="photo5"></div>
+					</div>
+					
+				</div>
+				<span id="left_bt"></span>
+				<span id="rigth_bt"></span>
+				<div class="clear"></div>
+			</div>
+		</section>
+		
+		<article>
+			<div class="a_part1">
+				<div class="p_top">
+				    <span class="icon"></span>
+                   	<p>昨日获得积分：</p>
+                   	<div class="score">
+                       <img src="img/shadow.png"  alt="">
+                       <img src="img/one.png" alt="">
+                       <img src="img/four.png" alt="">
+                   </div> 
+				</div>
+				
+				<div class="p_body">
+					<ul>
+						<li>
+							<p class="num">
+								<b>0</b>分
+							</p>
+							<span class="speed">
+                               5分/小时<br />
+                           	        昨日登录增长
+							</span>
+							<span></span>
+						</li>
+						<li>
+							<p class="num">
+								<b>0</b>分
+							</p>
+							<span class="speed">							
+                               3分/小时<br />
+                      		      昨日搜索增长                           
+							</span>
+							<span></span>
+						</li>
+						<li>
+							<p class="num">
+								<b>0</b>分
+							</p>
+							<span class="speed">		
+                               1分/小时<br />                       
+                          		  昨日网页访问增长                          
+							</span>
+							<span></span>
+						</li>
+					</ul>
+					
+				</div>
+				
+				
+				 <div class="list_score recent">
+               <div class="top">
+                   <span class="icon"></span>
+                   <p>近10天获得积分详情：</p>
+                   <ul class="online">
+                       <li class="current">在线</li>
+                       <li>搜索</li>
+                       <li>网页访问</li>
+                   </ul>
+               </div>
+                <ol class="chart">
+                    <li>
+                        <p class="date">11月14日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">15日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">16日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">17日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">18日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">19日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">20日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">21日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">22日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">23日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                </ol>
+                <ol class="chart">
+                    <li>
+                        <p class="date">11月14日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">15日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">16日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">17日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">18日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">19日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">20日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">21日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">22日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">23日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                </ol>
+                <ol class="chart">
+                    <li>
+                        <p class="date">11月14日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">15日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">16日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">17日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">18日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">19日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">20日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">21日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">22日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p class="date">23日</p>
+                        <div class="line">
+                            
+                        </div>
+                    </li>
+                </ol>
+        </div>
+				
+			</div>
+			
+		</article>
+	</body>
+</html>

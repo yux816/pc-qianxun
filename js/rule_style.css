@@ -1,0 +1,112 @@
+			body,ul,li,h4{
+				padding: 0px;
+				margin: 0;
+				list-style-type: none;
+			}
+			body{
+				background: rgb(246, 248, 250);
+				font-family: 微软雅黑;
+			}
+			
+			header{
+				width: 100%;
+				height: 70px;
+				box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+				/*background-color: red;*/
+			}
+			a{
+				text-decoration: none;
+				color: #425766;
+			}
+			.change{
+				border:solid red;
+				border-width:0px 0px 2px 0px;
+			}
+			.change a:only-of-type{
+				color:red;
+				
+			}
+			.h_body{
+				width: 960px;
+				height: 70px;
+				line-height: 35px;
+				margin: 0px auto;
+				
+				/*border: solid red;*/
+			}
+			.h_left{
+				width: 242px;
+				height: 35px;
+				margin-top: 20px;
+				float: left;
+				
+				background: url(../img/sprite.png) no-repeat -28px 0px;
+				/*background-size: 100% 100%;*/
+				/*background-color: #FAEBD7;*/
+				
+			}
+			.h_rigth{
+				width: auto;
+				height: 70px;
+				float: left;
+				margin-left: 40px;
+				
+				/*background-color: #C5CEC8;*/
+			}
+			.h_rigth li{
+				float: left;
+				width: 120px;
+				text-align: center;
+				height: 68px;
+				line-height: 68px;
+				font-size: 14px;
+				font-weight: 600;
+				color: #425766;
+				cursor: pointer;
+			}
+			section{
+				width: 960px;
+				height: 700px;
+				margin: 0px auto;
+			}
+			section>h2{
+				font-size: 16px;
+    			font-weight: 700;
+    			margin-top: 40px;
+			}
+			section>p{
+				 font-size: 14px;
+   				 color: #333;
+			}
+			table {
+				margin-top: 6px;
+			    border: solid 1px #d6dbe2;
+			    background: #eff3f6;
+			    border-bottom: 0;
+			    margin-bottom: 40px;
+			    text-align: center;
+			    border-collapse:collapse;
+			}
+			tr{
+				border: solid  #d6dbe2;
+				border-width:0px 0px 1px 0px;
+   				display: table-row;
+			}
+			th {
+				background: #e4e7eb;
+			}
+			table thead th {
+			    font-weight: 700;
+			    background: #e4e7eb;
+			    padding: 17px 0;
+			    border-bottom: solid 1px #d6dbe2;
+			}
+			table tbody td {
+			    font-size: 14px;
+			    padding: 17px 0;
+			    text-align: center;
+			    border-bottom: solid 1px #d6dbe2;
+			}
+			#t_1{
+				margin-top: 50px;
+			}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="js/mall_style.css" />
+		<script src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var num = 1;
+				$('.h_rigth li').click(function(){
+//					alert(1);
+					$(this).addClass('change').siblings().removeClass();
+				});
+				
+				$('#rigth_bt').click(function(){
+//					alert(num);
+					if(num<5){
+						$('.s_rigth .s_r_body').animate({'left':'-=747px'},400);
+						num++;
+					}
+				});
+				
+				$('#left_bt').click(function(){	
+//					alert(num);
+					if(num>1){
+						$('.s_rigth .s_r_body').animate({'left':'+=747px'},400);
+						num--;
+					}
+					
+				});
+			});
+			
+		</script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<header id="h_mall">
+			<div class="h_body">
+				<a href="index.html"><div class="h_left"></div></a>
+				<div class="h_rigth">
+					<ul>
+						<a href="mall.html"><li class="change">兑换特权</li></a>
+						<a href="myco.html"><li>我的积分</li></a>
+						<a href="rule.html"><li>积分规则</li></a>
+					</ul>
+				</div>
+			</div>
+			
+		</header>
+		<section id="s_mall">
+			<div class="s_body">
+				<div class="s_left">
+					<a href="#">登陆签到</a>
+					<p>
+						赚积分换特权<br />
+						连续签到<span style="color: red;">3</span>天还能抽大奖！
+					</p>
+				</div>
+				<div class="s_rigth">
+					<div class="s_r_body">
+						<div class="photo1"></div>
+						<div class="photo2"></div>
+						<div class="photo3"></div>
+						<div class="photo4"></div>
+						<div class="photo5"></div>
+					</div>
+					
+				</div>
+				<span id="left_bt"></span>
+				<span id="rigth_bt"></span>
+				<div class="clear"></div>
+			</div>
+		</section>
+		<article>
+			<div class="a_part1">
+				<div class="p_top">
+					<a>了解更多</a>
+				</div>
+				<div class="p_left">
+					<h1>
+    					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PPTV聚力会员激活码
+    				</h1>
+    				<img src="img/pptv_bg.png" />
+				</div>
+				<div class="p_rigth">
+					<div class="p_r_left">
+						<img src="img/pptv7.png" alt="">
+						<p><strong>500</strong>积分</p>
+					</div>
+					<div class="p_r_rigth">
+						<img src="img/pptvm.png" alt="">
+						<p><strong>1500</strong>积分</p>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="a_part2">
+				<div class="p_top">
+					<a>了解更多</a>
+				</div>
+				<div class="p_left">
+					<h1>
+    					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    					爱奇艺VIP激活码
+    				
+    				</h1>
+    				<img src="img/iqy_bg.png" />
+				</div>
+				<div class="p_rigth">
+					<div class="p_r_left">
+						<img src="img/iqyday.png" alt="">
+						<p><strong>500</strong>积分</p>
+					</div>
+					<div class="p_r_rigth">
+						<img src="img/iqyday.png" alt="">
+						<p><strong>10000</strong>积分</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="a_part3">
+				<div class="p_top">
+					<a>了解更多</a>
+				</div>
+				<div class="p_left">
+					<h1>
+    					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    					百度云会员激活码
+    				
+    				</h1>
+    				<img src="img/bdy_bg.png" />
+				</div>
+				<div class="p_rigth">
+					<div class="p_r_left">
+						<img src="img/bdyone.png" alt="">
+						<p><strong>4000</strong>积分</p>
+					</div>
+					<!--<div class="p_r_rigth">
+						<img src="img/iqyday.png" alt="">
+						<p><strong>10000</strong>积分</p>
+					</div>-->
+				</div>
+			</div>
+			
+			<div class="a_part4">
+				<div class="p_top">
+					<a>了解更多</a>
+				</div>
+				<div class="p_left">
+					<h1>
+    					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    					百度文库VIP激活码
+    				
+    				</h1>
+    				<img src="img/txt_bg.png" />
+				</div>
+				<div class="p_rigth">
+					<div class="p_r_left">
+						<img src="img/txt_day.png" alt="">
+						<p><strong>800</strong>积分</p>
+					</div>
+					<div class="p_r_rigth">
+						<img src="img/txt_month.png" alt="">
+						<p><strong>4000</strong>积分</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</body>
+</html>

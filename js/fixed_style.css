@@ -1,0 +1,96 @@
+		#log_header{
+			position: fixed;
+			z-index: 8;
+			top: 0px;
+			left: 20px;
+			/*background-color: antiquewhite;*/
+		}
+		#quanquan{
+			position: fixed;
+			z-index: 2;
+			right: 30px;
+			top: 350px;
+			/*background-color: darkcyan;*/
+		}
+
+		#quanquan li{
+			height: 20px;
+			width: 20px;
+			margin:10px auto;
+			text-align: center;
+		    border: 1px solid #da5c2a;
+		    border-radius: 50%;
+		    animation: zhizhenmove 5s linear infinite;
+		    cursor: pointer;
+/*			background-color: royalblue;*/
+		}
+		#quanquan .photo{
+			width: 30px;
+			height: 30px;
+			border: 0px;
+			background: url(../img/side_bg.png) no-repeat;
+			/*background-color:saddlebrown;*/
+			background-size: 30px 30px;	
+		}
+		#log_down{
+			position: fixed;
+			z-index: 9;
+			bottom: 160px;
+			width: 100%;
+   		    height: 85px;
+			text-align: center;
+			display: block;
+		}
+		#log_down ul{
+		      width: 330px;
+		      height: 50px;
+		      margin: 0px auto;
+		      /*background-color: wheat;*/
+		}
+		#log_down li{
+			float: left;
+		    font-size: 10px;
+		    border-right: solid 1px #c5cec8;
+		    padding: 0 10px;
+		    color: #fff;
+		    font-weight: bold;
+		    /*background-color: aqua;*/
+		}
+		#log_down li:last-child{
+			border:0px
+		}
+		footer{
+				position: fixed;
+				z-index: 1;
+				width: 100%;
+				height: 60px;
+				bottom: 0;			
+				background: rgba(0,0,0,0.5);
+		}
+		.f_body{
+				width: 1000px;
+				height: 50px;
+				margin: 0px auto;
+		}
+		.f_body li{
+				float: left;
+				width: 200px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				color: white;
+				cursor: pointer;
+				/*background-color: aqua;*/
+		}
+		.f_body li:nth-of-type(1){
+			
+		}
+			@keyframes zhizhenmove
+		{
+		    0% {  
+               transform: rotate(0deg);  
+           }  
+           100% {  
+                transform: rotate(360deg); 
+           }  
+		}

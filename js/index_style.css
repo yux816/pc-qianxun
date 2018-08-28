@@ -1,0 +1,289 @@
+
+		body,ol,ul,li,h1,h2,h3{
+			margin: 0px;
+			padding: 0px;
+			list-style-type: none;
+			font-family: 宋体;
+		}
+		body,html,section{
+			margin: 0px;
+			padding: 0px;
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			overflow: hidden;
+			
+		}
+		section{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		section>div{
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		.bgbody1{
+			width: 100%;
+			height: 100%;
+			background: url(../img/bg01.jpg) no-repeat;
+			background-size: 100% 100%;
+			transition: all 5s;
+		}
+		.bgbody2{
+			width: 100%;
+			height: 100%;
+			/*background-color:brown;*/
+			background: url(../img/bg02.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.bgbody3{
+			width: 100%;
+			height: 100%;
+			background: url(../img/bg03.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.bgbody4{
+			width: 100%;
+			height: 100%;
+			background: url(../img/bg04.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.bgbody5{
+			width: 100%;
+			height: 100%;
+			background: url(../img/bg05.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.bgbody6{
+			width: 100%;
+			height: 100%;
+			background: url(../img/bg06.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.bgbody7{
+			width: 100%;
+			height: 100%;
+			background: url(../img/bg07.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		div[class^=bgbody]>h1{
+			position: absolute;
+			/*bottom: 390px;*/
+			width: 100%;
+			height: auto;
+			text-align: center;
+			/*background-color: #FAEBD7;*/
+		}
+        div[class^=bgbody] .bg_log{
+        	position: absolute;
+        	width: 100%;
+        	bottom: 360px;
+        	text-align: center;
+        	background-color: aquamarine;
+        	transition:all 2s;
+        }
+		
+		 div[class^=bgbody] .bg_left{
+			position: absolute;
+			/*background-color: aqua;*/
+			background: url(../img/logo-text.png) no-repeat left center;
+			margin-left: -180px;
+			padding-right: 20px;
+			/*background-color: black;*/
+			display: inline-block;
+			transition:all 2s;
+			
+		}
+		 div[class^=bgbody] .bg_rigth{
+			position: absolute;
+			margin-left: -60px;
+			/*background-color: black;*/
+			display: inline-block;
+			transition: all 2s;
+			
+		}
+		 div[class^=bgbody]>p {
+			position: absolute;
+			width: 340px;
+			left: 50%;
+			bottom: 250px;
+			text-align: center;
+			margin-left: -170px;
+			/*background-color: brown;*/
+		    font-size: 12px;
+		    color: #fff;
+		    line-height: 18px;
+		    opacity:1;
+		    transition: all 2s;
+
+		}
+		.no .bg_log span:nth-of-type(1){
+			 margin-left:1080px; 
+		}
+		.no .bg_log span:nth-of-type(2){
+	        margin-left:-1080px; 
+	        transform:rotate(180deg);
+         }
+        .no p{
+			opacity:0.2;  
+			transform:scale(0.1);		    
+		}
+		.bgbody1>h1{
+			bottom: 390px;
+			animation: logmove 5s linear infinite;	
+		}
+		.bgbody2>h1{
+			bottom: 390px;
+		}
+		.bgbody2>h2{
+			position: absolute;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			bottom: 400px;
+			/*background-color: aliceblue;*/
+		}
+		.bgbody2>h2>img{
+			animation: zhizhenmove 5s  linear infinite;
+		}
+		.bgbody3>h1{
+			bottom: 390px;
+			animation: logmove 5s linear infinite;	
+		}
+		.bgbody4>h1{
+			 bottom: 390px;
+			 animation: qiqiumove 10s linear infinite;
+		}
+		.bgbody5>h1{
+			bottom: 390px;
+			 animation: big 2s linear infinite;
+		}
+		.bgbody5>h2{
+			position: absolute;
+			width: 100%;
+			text-align: right;
+			bottom: 250px;
+			right: 90px;
+            animation: small 5s linear infinite;
+		} 
+		.bgbody5>h3{
+			position: absolute;
+			width: 100%;
+			text-align: right;
+			bottom: 120px;
+			right: 210px;
+			animation: logmove 5s linear infinite;
+		} 
+		.bgbody6>h1{
+			bottom: 280px;
+			/*background-color: rosybrown;*/
+			animation: logmove 5s linear infinite;
+		}
+		.bgbody7>h1{
+			bottom: 380px;
+			animation: zhizhenmove 5s linear infinite;
+		}
+		.bgbody7>h2{
+			position: absolute;
+			text-align: center;
+			bottom: 380px;
+			width: 100%;
+			animation: zhizhenmove 5s linear infinite;
+		}
+		.bgbody7 .fly_1{
+			position: absolute;
+			/*z-index: 2px;
+			width: 200px;
+			height: 200px;*/
+			left: 10px;
+			top: 10px;
+			/*background-color: red;*/
+			animation: movefly 1s linear infinite;
+		}
+		.bgbody7 .fly_2{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			/*background-color: red;*/
+			animation: movefly01 2s linear infinite;
+		}
+		.bgbody7 .fly_3{
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+			/*background-color: red;*/
+			animation: movefly02 4s linear infinite;
+		}
+		.bgbody7 .fly_4{
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			/*background-color: red;*/
+			animation: movefly03 2s linear infinite;
+		}
+		.clear{
+			clear: both;
+		}
+		
+		@keyframes logmove
+		{
+		    0% {  
+               transform: translate(0px, 0px);  
+           }  
+           50% {  
+               transform: translate(0px, -20px);  
+           }  
+           100% {  
+               transform: translate(0px, 0px);  
+           }  
+		}
+		@keyframes zhizhenmove
+		{
+		    0% {  
+               transform: rotate(0deg);  
+           }  
+           100% {  
+                transform: rotate(360deg); 
+           }  
+		}
+		@keyframes qiqiumove{	
+			0%{ transform:rotate(0deg);}
+			25%{ transform:rotate(10deg);}
+			50%{ transform:rotate(0deg);}
+			75%{ transform:rotate(-10deg);}
+			100%{ transform:rotate(0deg)}
+		}
+		@keyframes big{	
+			0%{ transform:scale(0);}
+			100%{ transform:scale(6)}
+		}
+		@keyframes small{	
+			0% {  
+               transform: translate(0px, 0px);  
+           }  
+           50% {  
+               transform: translate(0px, 20px);  
+           }  
+           100% {  
+               transform: translate(0px, 0px);  
+           }  
+		}
+		@keyframes movefly{	
+			0%{ transform:translate(0px,0px)}
+			100%{ transform:translate(600px,120px)}
+		}
+		@keyframes movefly01{	
+			0%{ transform:translate(0px,0px)}
+			100%{ transform:translate(-600px,120px)}
+		}
+		@keyframes movefly02{	
+			0%{ transform:translate(0px,0px)}
+			100%{ transform:translate(600px,-400px)}
+		}
+		@keyframes movefly03{	
+			0%{ transform:translate(0px,0px)}
+			100%{ transform:translate(-600px,-400px)}
+				
