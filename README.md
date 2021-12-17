@@ -1,3 +1,4 @@
-#  https://yux816.github.io/qianxun/index.html
+ #### 小组作业
 
-仿千寻浏览器
+ 预览地址：https://yux816.github.io/pc-qianxun/index.html
+
